@@ -6,6 +6,7 @@
 #include "Cola Vending Machine.h"
 #include "Vehicles.h"
 #include "vectors.h"
+#include "Date.h"
 
 #include "..\common\technolib.h"
 
@@ -13,7 +14,17 @@ using namespace std;
 
 //Wenzel: Customer and Vehicles each contain some solutions of the Übungen
 int main() {
-	cout << "Classes 27-JAN-2020 to 31-JAN-2020, Uebung 10 & 11" << endl;
+	cout << "Classes 27-JAN-2020 to 05-FEB-2020, Uebung 10,11 and 15" << endl;
+
+	/*
+	Date
+	*/
+
+	MyDate d;
+	cout << d.currentDateTime() << endl;
+	cout << currentDECDate() << endl;
+	cout << "Hit <Enter> to continue" << endl;
+	(void)getchar(); // wait for input
 
 	/*
 	Coordinates
@@ -30,7 +41,8 @@ int main() {
 	Coordinate3D p4 = Coordinate3D(1, 2, 3);
 
 	vectortest();
-	//return 1;
+	cout << "Hit <Enter> to continue" << endl;
+	(void)getchar(); // wait for input
 
 	/*
 	Customers

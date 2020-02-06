@@ -8,9 +8,10 @@ using namespace std;
 class CVM {
 public:
 	const unsigned MAXCANS = 100;
-	unsigned cans_remaining = MAXCANS;
 	const float PRICE = 1.1f; //in €
-
+private:
+	unsigned cans_remaining = MAXCANS;
+public:
 	// returns amount of cans after filling
 	unsigned fill(unsigned cans) {
 		cans_remaining = cans;
@@ -36,4 +37,12 @@ public:
 			return 0;
 		}
 	}
+	// gets the current amount of cans in the machine
+	unsigned int getCanCount();
 };
+
+// gets the current amount of cans in the machine
+unsigned int CVM::getCanCount()
+{
+	return cans_remaining;
+}
