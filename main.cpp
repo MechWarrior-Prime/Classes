@@ -44,6 +44,15 @@ int main() {
 	Coordinate p5 = p1 + p2; // overloaded operator, defined in "demo functions.h"
 
 	cout << "Coordinate p5 reads as " << p5.toString() << endl;
+
+	p5 = AddAnyType(p1, p2); // this works b/c we have defined a + operator
+	cout << "Coordinate p5 reads as " << p5.toString() << endl;
+
+	unsigned long long a = 1000000000;
+	unsigned long long b = 2000000000;
+
+	cout << "\nTesting template: " << AddAnyType(a, b) << endl;
+
 	vectortest();
 	cout << "Hit <Enter> to continue" << endl;
 	(void)getchar(); // wait for input

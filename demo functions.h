@@ -13,3 +13,10 @@ public:
 //	Coordinate AddIt(Coordinate a, Coordinate b);	// even with custom types
 };
 Coordinate operator+(Coordinate a, Coordinate b);
+
+//templates DO NOT have to be put into a .cpp file,unlike normal functions
+template<typename Datatype> // Datatype is a programmer chosen name
+//template<class T> // alternate syntax, T is also programmers chosen name, but a convention
+Datatype AddAnyType(Datatype a, Datatype b) {
+	return a + b;
+}

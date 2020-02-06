@@ -3,17 +3,12 @@
 
 using namespace std;
 
-double AddIt(double a, double b)
+double functions::AddIt(double a, double b)
 {
 	return a + b;
 }
 
-double AddIt(int a, double b)
-{
-	return a + b;
-}
-
-string functions::AddIt(string a, string b)
+double functions::AddIt(int a, double b)
 {
 	return a + b;
 }
