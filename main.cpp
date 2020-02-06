@@ -15,7 +15,7 @@ using namespace std;
 
 //Wenzel: Customer and Vehicles each contain some solutions of the Übungen
 int main() {
-	cout << "Classes 27-JAN-2020 to 05-FEB-2020, Uebung 10,11 and 15" << endl;
+	cout << "Classes 27-JAN-2020 to 06-FEB-2020, Uebung 10,11 and 15" << endl;
 
 	/*
 	Date
@@ -43,6 +43,7 @@ int main() {
 
 	Coordinate p5 = p1 + p2; // overloaded operator, defined in "demo functions.h"
 
+	cout << "Coordinate p5 reads as " << p5.toString() << endl;
 	vectortest();
 	cout << "Hit <Enter> to continue" << endl;
 	(void)getchar(); // wait for input
@@ -51,7 +52,7 @@ int main() {
 	Customers
 	*/
 
-	Customer Harry = { "Rindfleisch", "Harry", 51,gender::m };
+	Customer Harry = { "Hopper", "Harry", 51,gender::m };
 	Customer Susi;
 	Susi.age = 22;
 	Susi.name = "Sorglos";

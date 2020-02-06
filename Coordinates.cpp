@@ -1,4 +1,7 @@
 #include "Coordinates.h" // use .cpp if you use the class in multiple files, else the linker fails
+#include <string>
+
+using namespace std;
 
 Coordinate::Coordinate() {
 	x = 0.0;
@@ -9,6 +12,26 @@ Coordinate::Coordinate(double x, double y) {
 	this->x = x;
 	this->y = y;
 }
+
+string Coordinate::toString(Coordinate a)
+{
+	char       buf[80];
+	sprintf_s(buf, sizeof(buf), "X=%f, y=%f", a.x, a.y);
+	return buf;
+}
+string Coordinate::toString()
+{
+	char       buf[80];
+	sprintf_s(buf, sizeof(buf), "X=%f, y=%f", this->x, this->y);
+	return buf;
+}
+
+//string toStringCo(Coordinate a)
+//{
+//	char       buf[80];
+//	sprintf_s(buf, sizeof(buf), "X=%f, y=%f", a.x, a.y);
+//	return buf;
+//}
 
 Coordinate3D::Coordinate3D() {
 	x = 0.0;
