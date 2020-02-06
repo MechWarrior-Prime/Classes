@@ -3,7 +3,6 @@
 // standard constructor
 MyDate::MyDate(void) {
 	time_t     now = time(0);  //seconds since midnight 1.1.1970
-	char       buf[80];
 	tm ltm;
 	localtime_s(&ltm, &now);
 	Day = ltm.tm_mday;
@@ -22,7 +21,6 @@ MyDateTime::MyDateTime(void)
 	: MyDate() // use base class constructor
 {
 	time_t     now = time(0);  //seconds since midnight 1.1.1970
-	char       buf[80];
 	tm ltm;
 	localtime_s(&ltm, &now);
 	Seconds = ltm.tm_sec;

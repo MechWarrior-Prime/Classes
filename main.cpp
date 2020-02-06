@@ -7,6 +7,7 @@
 #include "Vehicles.h"
 #include "vectors.h"
 #include "Date.h"
+#include "demo functions.h"
 
 #include "..\common\technolib.h"
 
@@ -38,7 +39,9 @@ int main() {
 
 	Coordinate p3 = { 5.5, -3.2 }; // definitely shortest :)
 
-	Coordinate3D p4 = Coordinate3D(1, 2, 3);
+	Coordinate3D p4 = Coordinate3D(1, 2, 3); // inherited class
+
+	Coordinate p5 = p1 + p2; // overloaded operator, defined in "demo functions.h"
 
 	vectortest();
 	cout << "Hit <Enter> to continue" << endl;
