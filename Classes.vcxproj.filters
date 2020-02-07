@@ -53,5 +53,8 @@
     <ClInclude Include="demo functions.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="instruments.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

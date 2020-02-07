@@ -15,6 +15,9 @@ public:
 	string surname;
 	Person();
 	Person(string name, string surname);
+	void printName() {
+		cout << surname << " " << name; // no endl on purpose!
+	};
 };
 
 Person::Person() {
@@ -119,3 +122,14 @@ Vendor::Vendor(string name, string surname, string ID) {
 	this->surname = surname;
 	this->sID = ID;
 }
+
+// inheritance
+class Male : public Person {
+public:
+
+	//additional attribute
+	unsigned lengthOfBeard; //in mm
+	void printName() { // overwrites method in parent class
+		cout << "Mr. " << surname << " " << name; // no endl on purpose!
+	};
+};
